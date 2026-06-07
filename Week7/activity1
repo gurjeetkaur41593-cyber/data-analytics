@@ -1,0 +1,32 @@
+Based on the testing dataset:
+
+Total testing records = 30
+Misclassified records = 3
+False Negative (FN) = 2 → Sick patients predicted as Healthy
+False Positive (FP) = 1 → Healthy patient predicted as Sick
+
+This means:
+
+Correct predictions = 30 − 3 = 27
+
+However, the exact numbers of True Positive (TP) and True Negative (TN) cannot be fully determined because the total number of actual Healthy and Sick patients in the 30 testing records was not provided.
+
+Confusion Matrix Description
+
+A confusion matrix compares actual patient condition with model prediction:
+
+Actual / Predicted	Healthy	Sick
+Healthy	TN (unknown)	FP = 1
+Sick	FN = 2	TP (unknown)
+
+Where:
+
+True Positive (TP): Sick patients correctly classified as Sick
+True Negative (TN): Healthy patients correctly classified as Healthy
+False Positive (FP = 1): Healthy patient incorrectly classified as Sick
+False Negative (FN = 2): Sick patients incorrectly classified as Healthy
+
+Since there were 27 correct predictions, the relationship is:
+
+TP + TN = 27
+
